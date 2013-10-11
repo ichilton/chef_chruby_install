@@ -35,3 +35,12 @@ git src_path do
 
   notifies :run, resources(:execute => "Install chruby"), :immediately
 end
+
+directory "/etc/profile.d" do
+  recursive true
+end
+
+template "/etc/profile.d/chruby.sh" do
+  source "chruby.sh.erb"
+  mode "0644"
+end
