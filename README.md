@@ -4,11 +4,11 @@ This cookbook is an alternative to the chruby cookbook produced by my friend Ste
 
 I did take inspiration from the above cookbook, but this cookbook takes a slightly different approach, in that:
 
- - Although you can include it in a runlist to simply install chruby, it's really intended to be used from a wrapper cookbook so doesn't do anything with regards to installing rubies - I prefer to use the LWRP's provided by the ruby-build or ruby_install cookbooks for this:
+ - it installs from git and can be kept up-to-date
+
+ - Although you can include it in a run list to simply install chruby, it's really intended to be used from a wrapper cookbook so doesn't do anything with regards to installing rubies - I prefer to use the LWRP's provided by the ruby-build or ruby_install cookbooks for this:
    - https://github.com/rosstimson/chef-ruby_install
    - https://github.com/fnichol/chef-ruby_build
-
- - it currently does a once off install and doesn't worry about keeping up-to-date.
 
  - it doesn't use the ark cookbook so doesn't result in /usr/local/chruby-1 and a /usr/local/chruby symlink.
 
@@ -19,11 +19,16 @@ I did take inspiration from the above cookbook, but this cookbook takes a slight
  - ensures the auto selection script (auto.sh) is loaded after selecting a default ruby, so the default ruby does not override the version in .ruby-install
 
 
+**Thanks to Fletcher Nicol (@fnicol) for inspiration on using the git repo as per the ruby-build cookbook.**
+
+
 # Requirements
 
-The cookbook has no dependancies, but assumes you have make etc available for the install to work.
+The cookbook has no dependancies, but assumes you have make etc available for the install to work (eg: the make command) - you can install these with the build_essentials cookbook.
 
 Note that as mentioned above, this cookbook doesn't handle installing rubies so you need to use ruby_install (https://github.com/postmodern/ruby-install), ruby-build (https://github.com/sstephenson/ruby-build), the cookbooks for them as mentioned above or another method to get your required rubies into /opt/rubies or ~/.rubies.
+
+Only currently tested on Ubuntu 12.04!
 
 
 # Usage
