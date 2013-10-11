@@ -1,5 +1,7 @@
 # chruby_install cookbook
 
+A cookbook to install chruby (https://github.com/postmodern/chruby) - a simple script to change the current Ruby.
+
 This cookbook is an alternative to the chruby cookbook produced by my friend Stephen Nelson-Smith (@LordCope) of Atalanta Systems, which is available here: https://github.com/Atalanta/chef-chruby
 
 I did take inspiration from the above cookbook, but this cookbook takes a slightly different approach, in that:
@@ -39,6 +41,14 @@ Override any attributes required (see: attributes/default.rb) and either include
 
 
 # Attributes
+
+node[:chruby_install][:git_url] - The url of the git repository for chruby (defaults to: https://github.com/postmodern/chruby.git)
+
+node[:chruby_install][:git_ref] - The git ref (branch, tag or commit) to use (defaults to: master)
+
+node[:chruby_install][:auto_upgrade] - A boolean specifying whether chruby should just be installed (false) or kept up-to-date (true). The default is: false.
+
+node[:chruby_install][:git_packages] - A list of packages to install for git. This defaults to 'git' or 'git-core', depending on the OS.
 
 
 # Recipes
