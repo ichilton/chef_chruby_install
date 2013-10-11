@@ -24,7 +24,9 @@ Thanks to Fletcher Nicol (@fnicol) for inspiration on using the git repo as per 
 
 # Requirements
 
-The cookbook has no dependancies, but assumes you have make etc available for the install to work (eg: the make command) - you can install these with the build_essentials cookbook.
+The cookbook has no dependancies, but assumes you have make etc available for the install to work (eg: the make command) - you can install these with the build_essential cookbook (https://github.com/opscode-cookbooks/build-essential).
+
+It does however ensure git is installed.
 
 Note that as mentioned above, this cookbook doesn't handle installing rubies so you need to use ruby_install (https://github.com/postmodern/ruby-install), ruby-build (https://github.com/sstephenson/ruby-build), the cookbooks for them as mentioned above or another method to get your required rubies into /opt/rubies or ~/.rubies.
 
