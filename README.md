@@ -60,7 +60,7 @@ Override any attributes required (see: attributes/default.rb) and either include
 
 **node[:chruby_install][:default_ruby]** - Automatically switch to a specified ruby when logging in. The default is: false.
 
-**node[:chruby_install][:auto_upgrade]** - Automatically switch to the ruby specified in a .ruby-version file. The default is: true.
+**node[:chruby_install][:auto]** - Automatically switch to the ruby specified in a .ruby-version file. The default is: true.
 
 
 # Recipes
