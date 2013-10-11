@@ -19,7 +19,7 @@ I did take inspiration from the above cookbook, but this cookbook takes a slight
  - ensures the auto selection script (auto.sh) is loaded after selecting a default ruby, so the default ruby does not override the version in .ruby-install
 
 
-**Thanks to Fletcher Nicol (@fnicol) for inspiration on using the git repo as per the ruby-build cookbook.**
+Thanks to Fletcher Nicol (@fnicol) for inspiration on using the git repo as per the ruby-build cookbook.
 
 
 # Requirements
@@ -28,7 +28,7 @@ The cookbook has no dependancies, but assumes you have make etc available for th
 
 Note that as mentioned above, this cookbook doesn't handle installing rubies so you need to use ruby_install (https://github.com/postmodern/ruby-install), ruby-build (https://github.com/sstephenson/ruby-build), the cookbooks for them as mentioned above or another method to get your required rubies into /opt/rubies or ~/.rubies.
 
-Only currently tested on Ubuntu 12.04!
+**Only currently tested on Ubuntu 12.04!**
 
 
 # Usage
