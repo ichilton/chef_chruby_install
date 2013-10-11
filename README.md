@@ -42,25 +42,25 @@ Override any attributes required (see: attributes/default.rb) and either include
 
 # Attributes
 
-node[:chruby_install][:git_url] - The url of the git repository for chruby (defaults to: https://github.com/postmodern/chruby.git)
+**node[:chruby_install][:git_url]** - The url of the git repository for chruby (defaults to: https://github.com/postmodern/chruby.git)
 
-node[:chruby_install][:git_ref] - The git ref (branch, tag or commit) to use (defaults to: master)
+**node[:chruby_install][:git_ref]** - The git ref (branch, tag or commit) to use (defaults to: master)
 
-node[:chruby_install][:auto_upgrade] - A boolean specifying whether chruby should just be installed (false) or kept up-to-date (true). The default is: false.
+**node[:chruby_install][:auto_upgrade]** - A boolean specifying whether chruby should just be installed (false) or kept up-to-date (true). The default is: false.
 
-node[:chruby_install][:git_packages] - A list of packages to install for git. This defaults to 'git' or 'git-core', depending on the OS.
+**node[:chruby_install][:git_packages]** - A list of packages to install for git. This defaults to 'git' or 'git-core', depending on the OS.
 
-node[:chruby_install][:use_embedded] - Add the ruby that is installed by the chef omnibus installer to the list of available rubies (defaults to: false)
+**node[:chruby_install][:use_embedded]** - Add the ruby that is installed by the chef omnibus installer to the list of available rubies (defaults to: false)
 
-node[:chruby_install][:use_rvm] - Add any rubies installed by rvm to the list of available rubies (defaults to: false)
+**node[:chruby_install][:use_rvm]** - Add any rubies installed by rvm to the list of available rubies (defaults to: false)
 
-node[:chruby_install][:use_rbenv] - Add any rubies installed by rbenv to the list of available rubies (defaults to: false)
+**node[:chruby_install][:use_rbenv]** - Add any rubies installed by rbenv to the list of available rubies (defaults to: false)
 
-node[:chruby_install][:use_rbfu] - Add any rubies installed by rbfu to the list of available rubies (defaults to: false)
+**node[:chruby_install][:use_rbfu]** - Add any rubies installed by rbfu to the list of available rubies (defaults to: false)
 
-node[:chruby_install][:default_ruby] - Automatically switch to a specified ruby when logging in. The default is: false.
+**node[:chruby_install][:default_ruby]** - Automatically switch to a specified ruby when logging in. The default is: false.
 
-node[:chruby_install][:auto_upgrade] - Automatically switch to the ruby specified in a .ruby-version file. The default is: true.
+**node[:chruby_install][:auto_upgrade]** - Automatically switch to the ruby specified in a .ruby-version file. The default is: true.
 
 
 # Recipes
