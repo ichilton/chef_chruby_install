@@ -8,7 +8,7 @@ I did take inspiration from the above cookbook, but this cookbook takes a slight
 
  - it installs from git and can be kept up-to-date
 
- - Although you can include it in a run list to simply install chruby, it's really intended to be used from a wrapper cookbook so doesn't do anything with regards to installing rubies - I prefer to use the LWRP's provided by the ruby-build or ruby_install cookbooks for this:
+ - Although you can include it in a run list to simply install chruby, it's really intended to be used from a wrapper cookbook (such as: https://github.com/ichilton/chef_rubies) so doesn't do anything with regards to installing rubies - I prefer to use the LWRP's provided by the ruby-build or ruby_install cookbooks for this, like my wrapper cookbook (https://github.com/ichilton/chef_rubies) does:
    - https://github.com/rosstimson/chef-ruby_install
    - https://github.com/fnichol/chef-ruby_build
 
