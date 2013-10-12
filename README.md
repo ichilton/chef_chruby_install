@@ -23,6 +23,8 @@ I did take inspiration from the above cookbook, but this cookbook takes a slight
 
 Thanks to Fletcher Nicol (@fnicol) for inspiration on using the git repo as per the ruby-build cookbook.
 
+TODO: Add tests
+
 
 # Requirements
 
