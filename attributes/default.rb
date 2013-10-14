@@ -4,7 +4,7 @@
 #
 
 default[:chruby_install][:git_url] = 'https://github.com/postmodern/chruby.git'
-default[:chruby_install][:git_ref] = 'master'
+default[:chruby_install][:git_ref] = 'v0.3.7'
 
 default[:chruby_install][:auto_upgrade] = false
 
