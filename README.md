@@ -28,7 +28,7 @@ TODO: Add tests
 
 # Requirements
 
-There is a single dependency of the build_essential cookbook (https://github.com/opscode-cookbooks/build-essential).
+There is a single dependency - the build_essential cookbook (https://github.com/opscode-cookbooks/build-essential).
 
 It also ensures git is installed from the distribution packages.
 
