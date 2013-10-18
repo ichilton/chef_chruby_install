@@ -3,6 +3,7 @@
 # Recipe:: default
 #
 
+include_recipe 'build-essential'
 include_recipe 'chruby_install::_git'
 
 cache_path = Chef::Config['file_cache_path']
